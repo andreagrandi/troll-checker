@@ -22,7 +22,8 @@ with open('comments.tsv', 'w') as f:
         for comment in comments:
             comments_count += 1
             print('Comment: {0} - {1}'.format(comments_count, comment['message']))
-            f.write(comment['id'] + "\t" + comment['message'] + "\n")
+            message = comment['message'].replace('\n', '')
+            f.write(comment['id'] + "\t" + message + "\n")
             if comments_count >= MAX_NUMBER_OF_COMMENTS:   # Stop after 100 comments
                 break
 
