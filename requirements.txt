@@ -1,0 +1,1 @@
+-e git+https://github.com/mobolic/facebook-sdk.git@410f5c5892acea0c7a45a5382abccb6b7c702d6d#egg=facebook_sdk
